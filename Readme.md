@@ -29,5 +29,14 @@ Follow the steps below to get started with the project.
 ### Running the Server
 - Start the server in development mode with: `npm run run-dev`.
 
+### Sample Requests (For reference see api-doc.json)
+- Get all shortened urls: `http://localhost:5000/api/v1/shorten`: curl: `curl --location 'http://localhost:5000/api/v1/shorten'`
+- Get a shortened url and redirect: `http://localhost:5000/api/v1/shorten/:shortUrl`
+- Create a new shortened url: `http://localhost:5000/api/v1/shorten`: curl: `curl --location 'http://localhost:5000/api/v1/shorten' \
+--header 'Content-Type: application/json' \
+--data '{
+    "fullUrl": "https://github.com/grahamkatana"
+}'`
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.

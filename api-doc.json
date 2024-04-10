@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "80433454-cdd9-4f15-ae7a-3cb0066a257d",
+		"name": "Url Shortener",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23798300"
+	},
+	"item": [
+		{
+			"name": "Redirect To Short Url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/shorten/Zj84uDnzv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"shorten",
+						"Zj84uDnzv"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Redirect To Short Url",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/shorten/Zj84uDnzv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"shorten",
+								"Zj84uDnzv"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 10 Apr 2024 21:53:32 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, max-age=0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=ISO-8859-1"
+						},
+						{
+							"key": "Content-Security-Policy-Report-Only",
+							"value": "object-src 'none';base-uri 'self';script-src 'nonce-Afui5tQgmAElKMGlInotDQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\""
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Server",
+							"value": "gws"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "AEC=AQTF6HyzMxLDHHKL1q0iWlIU6n3l2eQ3wj_c2q31_FKbmZKy7xeL7X39OT0; expires=Mon, 07-Oct-2024 21:53:32 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "NID=513=WtkFeLZ-5t9xJaAyeH5He2L36u8kF75mxysbhLB3QY64wQMjChjgsMA-xs652sLWksuQ3lzjpKhQG0ez02T9YRF1SnMEyMxvef9cOIQqSefA44p6YFj4sU6Pak_j0zPNswfzVX9TNoL1931ClKghb2WRJUa23ycQWhlfz5WKPG0; expires=Thu, 10-Oct-2024 21:53:32 GMT; path=/; domain=.google.com; HttpOnly"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body":"Returns the html page"
+				}
+			]
+		},
+		{
+			"name": "Get All Urls",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/shorten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"shorten"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Shortened Urls",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/shorten",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"shorten"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "589"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"24d-tEBuHwe02ukv+51sbMm+9ncpowQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Apr 2024 21:55:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Server has responded\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"full_url\": \"https://www.google.com\",\n            \"shortened_url\": \"Zj84uDnzv\",\n            \"visits\": 4,\n            \"created_at\": \"2024-04-10T20:32:33.000Z\",\n            \"updated_at\": \"2024-04-10T21:53:30.000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 2,\n            \"full_url\": \"https://www.google.com\",\n            \"shortened_url\": \"aIiDLt2cn\",\n            \"visits\": 0,\n            \"created_at\": \"2024-04-10T20:38:20.000Z\",\n            \"updated_at\": \"2024-04-10T20:38:20.000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 3,\n            \"full_url\": \"https://www.google.com\",\n            \"shortened_url\": \"o9fWN-Ixy\",\n            \"visits\": 0,\n            \"created_at\": \"2024-04-10T21:18:59.000Z\",\n            \"updated_at\": \"2024-04-10T21:18:59.000Z\",\n            \"deleted_at\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create A Short Url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullUrl\":\"https://github.com/grahamkatana\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/shorten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"shorten"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Shortened Url Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullUrl\": \"https://github.com/grahamkatana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/shorten",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"shorten"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"84-6NU/u64ug7GwO1gVwvY5X8p5y8o\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Apr 2024 21:57:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Your url has been shortened\",\n    \"data\": {\n        \"fullUrl\": \"https://github.com/grahamkatana\",\n        \"clicks\": 0,\n        \"shortenedUrl\": \"HkW0j7Jyr\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
