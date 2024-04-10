@@ -18,6 +18,7 @@ Follow the steps below to get started with the project.
 ### Database Setup
 1. Create a new database by running: `npx sequelize-cli db:create`.
 2. To add a new model, run: `npx sequelize-cli model:generate --name modelName --attributes attr_name:data_type`.
+3. Alternatively, you can import the given sql dump in db/bak.sql
 
 ### Migrations
 - Run migrations with: `npx sequelize-cli db:migrate`.
