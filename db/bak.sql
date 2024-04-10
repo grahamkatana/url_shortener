@@ -60,8 +60,8 @@ CREATE TABLE `shortened_urls` (
 
 INSERT INTO `shortened_urls` (`id`, `full_url`, `shortened_url`, `visits`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'https://www.google.com', 'Zj84uDnzv', 6, '2024-04-10 20:32:33', '2024-04-10 22:10:40', NULL),
-(2, 'https://www.google.com', 'aIiDLt2cn', 0, '2024-04-10 20:38:20', '2024-04-10 20:38:20', NULL),
-(3, 'https://www.google.com', 'o9fWN-Ixy', 0, '2024-04-10 21:18:59', '2024-04-10 21:18:59', NULL),
+(2, 'https://www.youtube.com', 'aIiDLt2cn', 0, '2024-04-10 20:38:20', '2024-04-10 20:38:20', NULL),
+(3, 'https://www.projectbook.co.za', 'o9fWN-Ixy', 0, '2024-04-10 21:18:59', '2024-04-10 21:18:59', NULL),
 (4, 'https://github.com/grahamkatana', 'HkW0j7Jyr', 0, '2024-04-10 21:57:50', '2024-04-10 21:57:50', NULL);
 
 --

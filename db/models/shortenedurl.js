@@ -1,4 +1,5 @@
 'use strict';
+// model to allow db operations
 const {
   Model, Sequelize
 } = require('sequelize');
