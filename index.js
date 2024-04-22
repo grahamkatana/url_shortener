@@ -12,9 +12,9 @@ app.get('/', (req, res) => {
         version: '1.0.0'
     })
 })
-
+// register the router
 app.use("/api/v1/shorten", require("./routes/urlShortener"));
-
+// start the server
 const server = app.listen(process.env.PORT || 5000, () => {
     console.log(`App is listening on port ${process.env.PORT || 5000}`);
 });

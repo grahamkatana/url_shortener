@@ -17,12 +17,12 @@ Follow the steps below to get started with the project.
 
 ### Database Setup
 1. Create a new database by running: `npx sequelize-cli db:create`.
-2. To add a new model, run: `npx sequelize-cli model:generate --name modelName --attributes attr_name:data_type`.
+2. Run `npm database:seed` to seed sample data
 3. Alternatively, you can import the given sql dump in db/bak.sql
 
 ### Migrations
-- Run migrations with: `npx sequelize-cli db:migrate`.
-- Rollback migrations with: `npx sequelize-cli db:migrate:undo`.
+- Run migrations with: `npx sequelize-cli db:migrate` or `npm run migrate:up `.
+- Rollback migrations with: `npx sequelize-cli db:migrate:undo`. or `npm run migrate:undo`.
 
 ### Testing
 - Run tests with: `npm test`.
@@ -41,3 +41,7 @@ Follow the steps below to get started with the project.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+### Other
+1. To add a new model, run: `npx sequelize-cli model:generate --name modelName --attributes attr_name:data_type`.
