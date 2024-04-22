@@ -19,7 +19,7 @@
 <li>Publish or unpublish URLs, only published URLs can be shared to the public</li>
 <li>Since this is an API backend, we can incorporate a frontend, this will help users to better interact with the system on managing their URLs</li>
 <li>URLs can be made in such a way they expire, when an expiration date is set, when that date passes the URL is no longer valid. This can be helpful for users who runs surveys that are limited.</li>
-<ol>
+</ol>
 <p>
 <br/>
 These features can easily be used or incorporated in our system, and this is headed towards improving security, usability and flexibility as the expiration can be configured, one can publish or unpublish a URL.
